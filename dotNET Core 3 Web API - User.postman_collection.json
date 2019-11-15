@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "49378865-c738-45c7-9f1d-87ec8bade345",
+		"name": "dotNET Core 3 Web API - User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"Camile\",\n\t\"password\":\"fQdUrvYrPOC\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{webroot}}/api/users/login",
+					"host": [
+						"{{webroot}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{webroot}}/api/users",
+					"host": [
+						"{{webroot}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "92a5dad0-d9f4-4047-bb6a-7e6199411aea",
+			"key": "webroot",
+			"value": "https://localhost:5001",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
